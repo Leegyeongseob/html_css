@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>아이패드 주문서</title>
+  <style>
+    label{
+      width: 100px;
+      display: inline-block;
+      color: black;      
+    }
+    fieldset{
+      width: 500px;
+    }
+    input[type="date"]{
+      width: 100px;
+    }
+    span{
+      font-size: 50%;
+    }
+    button{
+      width: 100px;
+      height: 30px;
+      padding: auto;
+    }
+    button:hover{
+      background-color:rgb(169, 233, 196)
+    }
+    .buttom_div{
+      margin-left: 150px;
+    }
+    input{
+      width: 200px;
+    }
+    input::placeholder{
+      font-size: 10px;
+    }
+    .body_class{
+      width: 800px;
+      margin:auto auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="body_class">
+  <form action="#">
+    <h2>아이패드 주문하기</h2>
+    <fieldset style="color: gray;">
+      <legend style="color: black;"><b>배송정보</b></legend>
+      <div>
+        <label for="item">주문상품</label>
+        <input type="text" name="item" id="item" value="아이패드 12.9인치" readonly>
+      </div>
+      <div>
+        <label for="name">이름</label>
+        <input type="text" name="name" id="name">
+      </div>
+      <div>
+        <label for="address">배송 주소</label>
+        <input type="text" name="address" id="address">
+      </div>
+      <div>
+        <label for="email">이메일</label>
+        <input type="email" name="email" id="email">
+      </div>
+      <div>
+        <label for="tel">연락처</label>
+        <input type="tel" name="tel" id="tel" placeholder="하이픈 빼고 입력해 주세요(01012345678)">
+      </div>
+      <div>
+        <label for="delivery">배송 지정</label>
+        <input type="date" name="delivery" id="delivery"><span style="color: black;"><b>(주문일로부터 최소 3일 이후)</b></span>
+      </div>
+    </fieldset>
+    <br>
+    <div class="buttom_div">
+      <button type="submit">주문하기</button>
+      <button type="reset">취소하기</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>

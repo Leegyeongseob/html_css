@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<!-- 라디오 타입 : 여러 항목 중 하나만 선택하도록 함 -->
+<body>
+<!-- 인접해야 서로 상호작용(label for = input id) -->
+<!-- name은 선택해야 할 그룹을 의미 -> 같아야한다. -->
+<!-- value -> 실제로 넘어가야 하는 값 -->
+<label for="male">남성</label>
+<input type="radio" name="gender" id="male" value="남자">
+<label for="female">여성</label>
+<input type="radio" name="gender" id="male" value="여자">
+<div>
+  <label for="apple">사과</label>
+  <input type="radio" name="fruits" id="apple" value="apple">
+  <label for="banana">바나나</label>
+  <input type="radio" name="fruits" id="banana"value="banana">
+  <label for="mango">망고</label>
+  <input type="radio" name="fruits" id="mango" value="mango">
+  <label for="user_id">아이디</label>
+  <input type="text" id="user_id" placeholder="6자리 이상">
+  <form action="#">
+    <fieldset>
+      <legend>기본정보</legend>
+      <div>
+        <label for="userid">아이디</label>
+        <input type="text" id="userid" placeholder="6자리 이상">
+      </div>
+      <div>
+        <label for="pwd">비밀번호</label>
+        <input type="password" id="pwd" placeholder="8자리 이상">
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>선택정보</legend>
+      <div>
+        <label for="age">나이</label>
+        <input type="number" id="age" placeholder="숫자만 입력">
+      </div>
+      <div>
+        <label for="recom">추천인</label>
+        <input type="text" id="recom" placeholder="없으면 생략가능">
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>블로그 글쓰기</legend>
+      <div>
+        <label for="title">제목</label>
+        <input type="text" id="title">
+      </div>
+      <div>
+        <label for="desc">내용</label>
+        <textarea id="desc" cols="100" rows="10" readonly>하지만</textarea>
+      </div>
+    </fieldset>
+  </form>
+
+
+</div>
+
+</body>
+</html>
